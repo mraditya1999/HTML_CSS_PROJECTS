@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --accent: rgb(170, 92, 219);
+  --white: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-headings: hsla(0, 0%, 100%, 0.6);
+  --ff-primary: 'Inter', sans-serif;
+  --ff-secondary: 'Lexend Deca', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--main-background);
+}
+span {
+  color: var(--accent);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--white);
+}
+
+small {
+  color: var(--stat-headings);
+  letter-spacing: 1.5;
+  font-size: 12px;
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+section {
+  width: 90vw;
+  max-width: 768px;
+  background: var(--card-background);
+  border-radius: 0.325rem;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: multiply;
+  background: var(--accent);
+  display: block;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.card-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  color: var(--main-paragraph);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.stats {
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.stats small {
+  letter-spacing: 2px;
+  font-size: 0.6rem;
+  font-family: var(--ff-primary);
+  font-weight: 400;
+}
+
+@media screen and (min-width: 468px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+  }
+
+  .stats {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .container {
+    margin-top: 3rem;
+    justify-content: space-around;
+  }
+
+  .card-info {
+    padding: 2rem;
+    flex: 0 0 50%;
+  }
+
+  .image-container {
+    flex: 0 0 50%;
+  }
+  .card-text {
+    max-width: 20rem;
+    margin-bottom: 0;
+  }
+
+  .card-title {
+    font-size: 1.75rem;
+  }
+}
+
+.attribution {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+.attribution a {
+  color: var(--white);
+}
