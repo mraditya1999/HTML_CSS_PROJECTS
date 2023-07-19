@@ -12,7 +12,7 @@
   <img src="./03-product-preview-card/design/desktop-design.jpg" alt="product-preview-card" width="300" height="200" style="border-radius: 10px;">
 </a>
 
-<a href="https://https://fm-04-three-column-preview-card.netlify.app">
+<a href="https://fm-04-three-column-preview-card.netlify.app">
   <img src="./04-three-column-preview-card/design/desktop-design.jpg" alt="three-column-preview-card" width="300" height="200" style="border-radius: 10px;">
 </a>
 
