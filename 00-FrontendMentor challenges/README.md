@@ -45,5 +45,5 @@
 </a>
 
 <a href="https://fm-12-huddle-landing-page.netlify.app/">
-  <img src="./12-huddle-landing-page/design/desktop-design.jpg" alt="social-proof-section" width="300" height="200" style="border-radius: 10px;">
+  <img src="./12-huddle-landing-page/design/desktop-design.jpg" alt="social-proof-section" width="300" height="200" style="border-radius: 10px; object-fit: cover;">
 </a>
