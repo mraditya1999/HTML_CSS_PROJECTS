@@ -31,15 +31,17 @@ main {
   background: var(--light-gray);
   color: var(--grayish-blue);
   position: relative;
+  display: grid;
+  place-items: center;
+  padding-block: 2rem;
 }
 
 section {
   width: 90vw;
   max-width: 1000px;
-  margin: 0 auto;
   text-align: center;
-  padding-block: 3rem;
 }
+
 .heading-primary {
   font-weight: 200;
 }
@@ -47,20 +49,19 @@ section {
 .card-text {
   max-width: 450px;
   margin: 1rem auto 2rem auto;
-  font-weight: 400;
   color: var(--grayish-blue);
   font-size: 0.85rem;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .card {
-  padding: 1.5rem 2rem;
+  padding: 2rem 2rem;
   border-radius: 0.4rem;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-  max-width: 22rem;
+  max-width: 24rem;
   margin: 0 auto;
+  margin-bottom: 1rem;
   background: var(--light-gray);
-  margin-bottom: 2rem;
   border-top: 0.2rem solid transparent;
 }
 
@@ -111,12 +112,12 @@ section {
   color: var(--blue);
 }
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 600px) {
   .cards {
     display: grid;
     justify-content: space-around;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .card {
@@ -124,7 +125,7 @@ section {
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 992px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
