@@ -524,6 +524,7 @@ section.reviews .dots li.slick-active button {
 .blog-img {
   width: 100%;
   display: block;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -707,6 +708,7 @@ footer .social-icon:hover {
   padding: 2rem;
   padding-top: 5rem;
   transform: translateX(-100%);
+  overflow: hidden;
   transition: all 0.3s ease-in-out;
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
@@ -745,6 +747,11 @@ footer .social-icon:hover {
   color: var(--secondary);
   text-decoration: none;
   font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-nav ul li a:hover {
+  color: var(--primary);
 }
 
 /* 
@@ -778,6 +785,7 @@ footer .social-icon:hover {
   }
 
   header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
   }
 
@@ -811,18 +819,13 @@ footer .social-icon:hover {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .mobile-nav {
-    width: 100%;
-  }
-}
-
 @media (max-width: 650px) {
   .hero {
     flex-direction: column;
     gap: 7rem;
   }
   header {
+    -webkit-clip-path: none;
     clip-path: none;
   }
   .hero-info-container {
@@ -860,6 +863,7 @@ footer .social-icon:hover {
   }
   .freelancer {
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%); */
+    -webkit-clip-path: none;
     clip-path: none;
     padding-bottom: 8rem;
   }
@@ -885,7 +889,12 @@ footer .social-icon:hover {
 
   .blogs {
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%); */
+    -webkit-clip-path: none;
     clip-path: none;
     padding-bottom: 3rem;
+  }
+
+  .mobile-nav {
+    width: 100%;
   }
 }
