@@ -59,3 +59,7 @@
 <a href="https://fm-15-huddle-landing-page-intro.netlify.app">
   <img src="./15-huddle-landing-page-intro/design/desktop-design.jpg" alt="interactive-rating-component" width="300" height="200">
 </a>
+
+<a href="https://fm-16-results-summary-component.netlify.app">
+  <img src="./16-results-summary-component/design/desktop-design.jpg" alt="interactive-rating-component" width="300" height="200">
+</a>
