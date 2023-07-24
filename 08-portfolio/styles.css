@@ -33,6 +33,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -655,7 +656,7 @@ footer .social-icons {
   align-items: center;
   gap: 1.5rem;
   font-size: 2rem;
-  margin-block: 3rem;
+  margin-block: 2.5rem;
 }
 
 footer .social-icon {
@@ -672,7 +673,7 @@ footer .social-icon:hover {
   color: var(--ternary);
   text-align: center;
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 /* 

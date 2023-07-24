@@ -27,6 +27,7 @@ main {
   display: grid;
   place-items: center;
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 
 .data-storage {

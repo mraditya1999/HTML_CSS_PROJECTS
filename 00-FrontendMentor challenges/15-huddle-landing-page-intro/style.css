@@ -71,7 +71,10 @@ header {
 }
 
 .hero-img {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  width: 85vw;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .hero p {
@@ -102,7 +105,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 0.75rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .social-icon {
@@ -165,12 +168,16 @@ header {
   .hero-center {
     display: flex;
     gap: 2rem;
-    align-items: center;
     justify-content: space-between;
+  }
+
+  .hero-img {
+    margin-bottom: 0;
   }
 
   .hero-info {
     text-align: left;
+    align-self: center;
   }
 
   .hero h1 {
@@ -183,6 +190,8 @@ header {
   }
 
   .social-icons {
+    margin-top: 4rem;
     justify-content: flex-end;
+    align-self: flex-end;
   }
 }
