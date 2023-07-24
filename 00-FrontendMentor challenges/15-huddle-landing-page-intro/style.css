@@ -54,6 +54,8 @@ img:not(.nav-logo) {
 
 header {
   min-height: 100vh;
+  position: relative;
+  padding-bottom: 2rem;
 }
 
 .section-center {
