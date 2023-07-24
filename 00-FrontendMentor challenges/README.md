@@ -51,6 +51,6 @@
 <a href="https://fm-13-interactive-rating-component.netlify.app">
   <img src="./13-interactive-rating-component/design/desktop-design.jpg" alt="interactive-rating-component" width="300" height="200">
 </a>
-<a href="https://fm-14-fylo-data-storage-component">
+<a href="https://fm-14-fylo-data-storage-component.netlify.app">
   <img src="./14-fylo-data-storage-component/design/desktop-design.jpg" alt="interactive-rating-component" width="300" height="200">
 </a>
