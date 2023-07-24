@@ -145,7 +145,7 @@ Animation
     transform: scale(1);
   }
   50% {
-    transform: scale(2);
+    transform: scale(1.5);
   }
   100% {
     transform: scale(1);
@@ -211,7 +211,7 @@ Navbar
 ===============
 */
 .nav-btn {
-  position: fixed;
+  position: absolute;
   top: 5%;
   left: 5%;
   font-size: 2.5rem;
@@ -242,7 +242,8 @@ Navbar
 }
 .navbar-header {
   text-align: right;
-  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
 }
 .nav-close {
   font-size: 2.5rem;
@@ -436,7 +437,7 @@ SERVICES
 =======================  
 */
 
-.service-title {
+.services-title {
   margin-top: 4rem;
   margin-bottom: -4rem;
   text-align: center;
