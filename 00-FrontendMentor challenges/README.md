@@ -44,10 +44,13 @@
   <img src="./11-social-proof-section/design/desktop-design.jpg" alt="social-proof-section" width="300" height="200" ">
 </a>
 
-<a href="https://fm-12-huddle-landing-page.netlify.app/">
+<a href="https://fm-12-huddle-landing-page.netlify.app">
   <img src="./12-huddle-landing-page/design/desktop-design.jpg" alt="huddle-landing-page" width="300" height="200">
 </a>
 
-<a href="https://fm-13-interactive-rating-component.netlify.app/">
+<a href="https://fm-13-interactive-rating-component.netlify.app">
   <img src="./13-interactive-rating-component/design/desktop-design.jpg" alt="interactive-rating-component" width="300" height="200">
+</a>
+<a href="https://fm-14-fylo-data-storage-component">
+  <img src="./14-fylo-data-storage-component/design/desktop-design.jpg" alt="interactive-rating-component" width="300" height="200">
 </a>
