@@ -73,7 +73,6 @@ main {
   border-bottom-right-radius: 2rem;
   text-align: center;
   padding: 2rem 2.5rem;
-  min-height: 40vh;
   color: var(--pale-blue);
 }
 
@@ -121,6 +120,7 @@ main {
 
 .card-2 {
   padding: 1rem 1.75rem;
+  background: var(--white);
 }
 
 .card-2 h3 {
@@ -209,8 +209,5 @@ main {
     height: auto;
     border-radius: 1.5rem;
     flex: 2;
-  }
-
-  .card-2 {
   }
 }
