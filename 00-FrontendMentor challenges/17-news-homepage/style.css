@@ -316,7 +316,17 @@ main {
 
 .blog {
   display: flex;
+  justify-content: center;
   gap: 1.5rem;
+}
+
+.blog-img {
+  align-self: start;
+  justify-self: start;
+}
+
+.blog-img img {
+  height: 100%;
 }
 
 .blog-number {
@@ -327,18 +337,17 @@ main {
 .blog-heading {
   text-transform: capitalize;
   color: var(--very-dark-blue);
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   font-weight: 800;
-  margin-block: 0.75rem;
+  margin-block: 0.5rem;
   display: inline-block;
 }
 
 .blog-text {
-  font-size: 1.15rem;
   max-width: 20rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .blogs {
     margin-top: 4rem;
     flex-direction: row;
