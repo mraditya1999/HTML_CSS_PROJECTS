@@ -347,7 +347,7 @@ main {
   max-width: 20rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .blogs {
     margin-top: 4rem;
     flex-direction: row;
