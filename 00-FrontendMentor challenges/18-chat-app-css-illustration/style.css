@@ -219,6 +219,48 @@ main {
   font-size: 0.7rem;
 }
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* Hide the default radio button */
+input[type='radio'] {
+  display: none;
+}
+
+/* Style the custom radio button circle */
+input[type='radio'] + label {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+}
+
+input[type='radio'] + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 12px; /* Adjust the value to change the circle size */
+  height: 12px; /* Adjust the value to change the circle size */
+  background: transparent;
+  border: 2px solid var(--radio-button-outline);
+  border-radius: 50%;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 .arrow {
   font-size: 1.75rem;
 }
