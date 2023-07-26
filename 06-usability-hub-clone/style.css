@@ -145,6 +145,70 @@ ul {
 
 /* 
 =========================
+    sidebar
+=========================
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-100%);
+  z-index: 1;
+  backdrop-filter: blur('10px');
+  background: white;
+}
+
+.show-sidebar {
+  transform: translateX(0);
+}
+
+.sidebar-links {
+  margin-top: 6rem;
+  font-size: 1.25rem;
+  padding: 2rem 0;
+}
+
+.nav-close {
+  font-size: 2rem;
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background: transparent;
+  border: transparent;
+}
+
+.nav-close:hover {
+  transform: scale(1.2);
+}
+
+.sidebar-link {
+  padding: 1rem 0;
+  text-align: center;
+  padding-left: 1.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-link:hover {
+  background: #a6e6fc;
+  padding-left: 2rem;
+}
+.sidebar-links .secondary-button {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.sidebar-btn {
+  text-align: center;
+}
+/* 
+=========================
     header section
 =========================
  */
@@ -217,7 +281,7 @@ header {
 
 .features-area {
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 40px;
   margin-top: 80px;
 }
@@ -225,8 +289,8 @@ header {
 .features-card {
   flex-direction: column;
   gap: 20px;
-  max-width: 30%;
   text-align: center;
+  flex-basis: 300px;
 }
 
 .features-card img {
@@ -265,8 +329,9 @@ header {
 }
 
 .examples-area {
-  justify-content: space-between;
   margin-block: 30px;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .examples-card {
@@ -333,6 +398,7 @@ header {
 .cta-section-container p {
   color: white;
   margin-top: 20px;
+  text-align: center;
 }
 
 /* 
@@ -345,6 +411,11 @@ footer {
   background-color: #ebf2fa;
 }
 
+.footer-logo {
+  margin-bottom: 2rem;
+  padding-left: 3rem;
+}
+
 .link-column {
   flex-direction: column;
   align-items: flex-start;
@@ -352,11 +423,15 @@ footer {
 }
 
 .footer-container {
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 
-/* subfooter */
+/* 
+=========================
+   subfooter section
+=========================
+ */
 
 .subfooter {
   background-color: #b9cde4;
@@ -365,5 +440,109 @@ footer {
 
 .subfooter-container {
   justify-content: center;
-  gap: 30px;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  display: none;
+}
+
+/* 
+=========================
+   RESPONSIVE
+=========================
+ */
+@media screen and (max-width: 992px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-btn {
+    display: block;
+    font-size: 1.75rem;
+    color: var(--accent-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: transparent;
+    background: transparent;
+  }
+
+  .nav-btn:hover {
+    color: var(--accent-color-dark);
+  }
+
+  .header-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .header-left {
+    width: 90vw;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .header-left h1 {
+    font-size: 2rem;
+  }
+
+  .header-right img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .logos {
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .features-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .features-card {
+    flex-basis: 250px;
+    margin: 0 auto;
+  }
+
+  .big-feature-section img {
+    display: block;
+  }
+
+  .examples-area {
+    flex-wrap: wrap;
+  }
+
+  .examples-card {
+    flex: 1 1 300px;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .footer-container {
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .big-feature-container {
+    flex-direction: column;
+  }
+
+  .big-feature-container .feature-desc {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-container {
+    justify-content: flex-start;
+  }
 }
