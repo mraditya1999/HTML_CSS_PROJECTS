@@ -67,3 +67,7 @@
 <a href="https://fm-17-news-homepage.netlify.app">
   <img src="./17-news-homepage/design/desktop-design.jpg" alt="interactive-rating-component" width="300" height="200">
 </a>
+
+<a href="https://fm-18-chat-app-css-illustration.netlify.app">
+  <img src="./18-chat-app-css-illustration/design/desktop-design.jpg" alt="interactive-rating-component" width="300" height="200">
+</a>
