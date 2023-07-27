@@ -53,21 +53,25 @@
 </a>
 
 <a href="https://fm-14-fylo-data-storage-component.netlify.app">
-  <img src="./14-fylo-data-storage-component/design/desktop-design.jpg" alt="interactive-rating-component" width="300" height="200">
+  <img src="./14-fylo-data-storage-component/design/desktop-design.jpg" alt="fylo-data-storage-component" width="300" height="200">
 </a>
 
 <a href="https://fm-15-huddle-landing-page-intro.netlify.app">
-  <img src="./15-huddle-landing-page-intro/design/desktop-design.jpg" alt="interactive-rating-component" width="300" height="200">
+  <img src="./15-huddle-landing-page-intro/design/desktop-design.jpg" alt="huddle-landing-page-intro" width="300" height="200">
 </a>
 
 <a href="https://fm-16-results-summary-component.netlify.app">
-  <img src="./16-results-summary-component/design/desktop-design.jpg" alt="interactive-rating-component" width="300" height="200">
+  <img src="./16-results-summary-component/design/desktop-design.jpg" alt="results-summary-component" width="300" height="200">
 </a>
 
 <a href="https://fm-17-news-homepage.netlify.app">
-  <img src="./17-news-homepage/design/desktop-design.jpg" alt="interactive-rating-component" width="300" height="200">
+  <img src="./17-news-homepage/design/desktop-design.jpg" alt="news-homepage" width="300" height="200">
 </a>
 
 <a href="https://fm-18-chat-app-css-illustration.netlify.app">
-  <img src="./18-chat-app-css-illustration/design/desktop-design.jpg" alt="interactive-rating-component" width="300" height="200">
+  <img src="./18-chat-app-css-illustration/design/desktop-design.jpg" alt="chat-app-css-illustration" width="300" height="200">
+</a>
+
+<a href="https://fm-19-clipboard-landing-page.netlify.app">
+  <img src="./19-clipboard-landing-page/design/desktop-design.jpg" alt="clipboard-landing-page" width="300" height="200">
 </a>
