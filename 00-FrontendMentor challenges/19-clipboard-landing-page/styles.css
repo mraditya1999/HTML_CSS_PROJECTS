@@ -190,6 +190,10 @@ p {
 ==================
  */
 
+.snippets-center .section-img {
+  margin-bottom: 2rem;
+}
+
 .snippets-center .section-img .img {
   display: block;
   width: 100%;
