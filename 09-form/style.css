@@ -167,7 +167,7 @@ label {
 
   .sign-in {
     grid-template-columns: 1fr;
-    max-width: 30rem;
+    max-width: 33rem;
     margin: 0 auto;
     overflow: visible;
   }
@@ -194,5 +194,11 @@ label {
 
   .sign-in__logo div {
     width: 12rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sign-in {
+    width: 100%;
   }
 }
