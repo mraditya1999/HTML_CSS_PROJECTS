@@ -75,3 +75,7 @@
 <a href="https://fm-19-clipboard-landing-page.netlify.app">
   <img src="./19-clipboard-landing-page/design/desktop-design.jpg" alt="clipboard-landing-page" width="300" height="200">
 </a>
+
+<a href="https://fm-20-fylo-landing-page-2-column-layout.netlify.app">
+  <img src="./20-fylo-landing-page-2-column-layout/design/desktop-design.jpg" alt="clipboard-landing-page" width="300" height="200">
+</a>
