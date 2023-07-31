@@ -79,3 +79,7 @@
 <a href="https://fm-20-fylo-landing-page-column-layout.netlify.app">
   <img src="./20-fylo-landing-page-2-column-layout/design/desktop-design.jpg" alt="fylo landing page 2 column layout" width="300" height="200">
 </a>
+
+<a href="https://fm-21-age-calculator-app.netlify.app">
+  <img src="./21-age-calculator-app/design/desktop-design.jpg" alt="fylo landing page 2 column layout" width="300" height="200">
+</a>
