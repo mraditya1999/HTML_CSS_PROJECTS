@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+:root {
+  --red: hsl(345, 95%, 68%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-blue: hsl(234, 17%, 12%);
+  --dark-blue: hsl(235, 16%, 14%);
+  --dark-desaturated-blue: hsl(236, 21%, 26%);
+  --grayish-blue: hsl(237, 18%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grayish-blue);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--red);
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  min-height: 100vh;
+  background: url('./images/pattern-hills.svg'), url('./images/bg-stars.svg');
+  background-position: bottom right, top right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.wrapper {
+  width: 90vw;
+  max-width: 700px;
+  margin-bottom: 4rem;
+}
+
+.heading {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.325rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: clamp(1rem, 5vw, 3rem);
+}
+
+.block-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* flex-basis: 7rem; */
+}
+
+.block span {
+  display: inline-block;
+  /* padding: 2rem 2rem; */
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  color: var(--red);
+  background: var(--dark-blue);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(5rem, 10vw, 10rem);
+  width: clamp(5rem, 10vw, 10rem);
+  /*
+  width: 7rem; */
+}
+
+.block .tx-small {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 0.625rem;
+  color: var(--grayish-blue);
+  letter-spacing: 3px;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.75rem;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--white);
+}
+
+.attribution a {
+  color: var(--red);
+}
