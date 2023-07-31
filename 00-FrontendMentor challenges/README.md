@@ -81,5 +81,9 @@
 </a>
 
 <a href="https://fm-21-age-calculator-app.netlify.app">
-  <img src="./21-age-calculator-app/design/desktop-design.jpg" alt="fylo landing page 2 column layout" width="320" height="220">
+  <img src="./21-age-calculator-app/design/desktop-design.jpg" alt="Age calculator App" width="320" height="220">
+</a>
+
+<a href="https://fm-22-countdown-timer.netlify.app">
+  <img src="./22-countdown-timer/design/desktop-design.jpg" alt="Countdown Timer" width="320" height="220">
 </a>
