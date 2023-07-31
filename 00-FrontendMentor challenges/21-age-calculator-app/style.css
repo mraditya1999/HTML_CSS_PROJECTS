@@ -29,6 +29,7 @@ main {
   display: grid;
   place-items: center;
   background: var(--offwhite);
+  position: relative;
 }
 
 .container {
@@ -147,12 +148,22 @@ input:focus {
   z-index: 1;
 }
 
-@media screen and (min-width: 768px) {
-  /* .form-group {
-    padding-right: 4rem;
-    width: 80%;
-  } */
+.attribution {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
 
+@media screen and (min-width: 768px) {
   .btn {
     left: 100%;
   }
