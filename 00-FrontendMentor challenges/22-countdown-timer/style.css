@@ -46,7 +46,7 @@ main {
 .wrapper {
   width: 85vw;
   max-width: 700px;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .heading {
@@ -69,26 +69,27 @@ main {
 .block {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .block span {
   display: inline-block;
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-size: clamp(1.75rem, 7vw, 4rem);
   color: var(--red);
-  background: var(--dark-blue);
-  border-radius: 0.25rem;
+  background: linear-gradient(hsl(236, 21%, 20%) 50%, hsl(236, 21%, 25%) 50%);
+  border-radius: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   height: clamp(4rem, 10vw, 8rem);
   width: clamp(4rem, 10vw, 8rem);
+  box-shadow: 0px 6px 5px var(--dark-blue);
 }
 
 .block .tx-small {
   text-transform: uppercase;
   display: inline-block;
-  font-size: 0.625rem;
+  font-size: 0.7rem;
   color: var(--grayish-blue);
   letter-spacing: 3px;
 }
