@@ -87,3 +87,7 @@
 <a href="https://fm-22-countdown-timer.netlify.app">
   <img src="./22-countdown-timer/design/desktop-design.jpg" alt="Countdown Timer" width="320" height="220">
 </a>
+
+<a href="https://fm-23-faq-accordion-card.netlify.app">
+  <img src="./23-faq-accordion-card/design/desktop-design.jpg" alt="FAQ Accordion" width="320" height="220">
+</a>
