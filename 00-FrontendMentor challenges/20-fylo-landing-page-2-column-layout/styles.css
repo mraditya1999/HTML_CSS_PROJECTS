@@ -117,10 +117,11 @@ nav {
   align-items: center;
   justify-items: end;
   padding: 2rem 0;
+  gap: 1.5rem;
 }
 
 .nav-logo {
-  width: 7rem;
+  width: clamp(5rem, 10vw, 9rem);
   display: flex;
   align-items: center;
 }
@@ -132,13 +133,19 @@ nav {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
   font-family: var(--ff-raleway);
 }
 
 .nav-link {
   font-size: 0.9rem;
   color: var(--dark-blue);
+}
+
+@media screen and (min-width: 576px) {
+  .nav-link {
+    font-size: 1rem;
+  }
 }
 
 .nav-link:hover {
@@ -211,6 +218,14 @@ Header
  productive
 ==============
  */
+
+.productive {
+  background: var(--light-grayish-blue);
+}
+
+.img {
+  margin-top: -5rem;
+}
 
 .section-img {
   display: grid;
