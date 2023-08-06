@@ -22,7 +22,7 @@ body {
 section {
   min-height: 100vh;
   display: flex;
-  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  /* background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); */
 }
 
 img:not(.logo img, .error) {
@@ -34,6 +34,7 @@ img:not(.logo img, .error) {
 .hero-wrapper {
   flex-basis: 55%;
   position: relative;
+  background: url('./images/bg-pattern-desktop.svg');
 }
 
 .hero-content-wrapper {
