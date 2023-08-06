@@ -18,13 +18,10 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
-body {
-  position: relative;
-}
-
 section {
   min-height: 100vh;
   display: flex;
+  position: relative;
 }
 
 img:not(.logo img, .error) {
@@ -150,20 +147,19 @@ input {
 }
 
 .popup {
-  border: 1px solid lightslategrey;
   position: absolute;
-  bottom: -30rem;
+  top: -3rem;
   left: 50%;
   transform: translateX(-50%);
+  border: 1px solid lightslategrey;
+  background: #fff;
   padding: 0.75rem 1rem;
   border-radius: 0.325rem;
   transition: all 0.3s ease-in;
-  display: none;
 }
 
 .show-popup {
-  bottom: 3rem;
-  display: block;
+  top: 3rem;
 }
 
 .hero-content-wrapper {
