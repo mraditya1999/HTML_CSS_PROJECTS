@@ -8,8 +8,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-[Solution URL](https://www.frontendmentor.io/solutions/qr-code-component-9LIGpXjOwy)
-[Live Site URL](https://fm-01-qr-code-component.netlify.app/)
+- [Solution URL](https://www.frontendmentor.io/solutions/qr-code-component-9LIGpXjOwy)
+- [Live Site URL](https://fm-01-qr-code-component.netlify.app/)
 
 ### Built with
 
@@ -20,7 +20,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
-- Website - [Aditya Yadav](https://www.adityayadav.live)
+- Website - [@mraditya1999](https://www.adityayadav.live)
 - Twitter - [@mraditya1999](https://twitter.com/mraditya1999)
 - Linkedin - [@mraditya1999](https://www.linkedin.com/in/mraditya1999/)
-- Frontend Mentor - [@Aditya-oss-creator](https://www.frontendmentor.io/profile/Aditya-oss-creator)
+- Frontend Mentor - [@mraditya1999](https://www.frontendmentor.io/profile/Aditya-oss-creator)
