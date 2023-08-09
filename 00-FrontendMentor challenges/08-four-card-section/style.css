@@ -61,10 +61,9 @@ section {
 }
 
 .card {
-  padding: 2rem 2rem;
+  padding: 2rem;
   border-radius: 0.4rem;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-  max-width: 24rem;
   margin: 0 auto;
   margin-bottom: 1rem;
   background: var(--light-gray);
@@ -127,7 +126,7 @@ section {
 @media screen and (min-width: 600px) {
   .cards {
     display: grid;
-    justify-content: space-around;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }

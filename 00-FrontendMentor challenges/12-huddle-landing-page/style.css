@@ -358,11 +358,17 @@ h4 {
   transform: translateX(-50%);
   width: 100%;
   font-size: 0.9rem;
-  color: var(--clr-pale-blue);
   text-align: center;
 }
 
+.attribution p {
+  text-align: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: var(--clr-pale-blue);
+}
+
 .attribution a {
+  text-decoration: none;
   color: hsl(228, 45%, 44%);
 }
 
