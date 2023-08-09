@@ -213,6 +213,10 @@ input {
     text-align: center;
     margin-block: 5rem 7rem;
   }
+
+  .hero-wrapper {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  }
 }
 
 .active .error {

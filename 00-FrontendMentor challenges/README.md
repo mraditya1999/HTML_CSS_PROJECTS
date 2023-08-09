@@ -95,3 +95,7 @@
 <a href="https://fm-24-base-apparel-coming-soon.netlify.app">
   <img src="./24-base-apparel-coming-soon/design/desktop-design.jpg" alt="Base  Apparel Coming Soon" width="320" height="220">
 </a>
+
+<a href="https://fm-25-notifications-page.netlify.app">
+  <img src="./25-notifications-page/design/desktop-design.jpg" alt="Notifications Page" width="320" height="220">
+</a>
