@@ -37,10 +37,9 @@ section {
 .notifications {
   width: 100vw;
   max-width: 672px;
-  padding: 1rem 2rem;
+  padding: 3rem 1rem;
   background: var(--white);
   border-radius: var(--borderRadius);
-  margin-block: 4rem;
 }
 
 .notification-header {
@@ -178,23 +177,29 @@ section {
 
 .comment {
   gap: 1rem;
-  flex: 0 0 2rem;
-  height: 2rem;
+  flex: 0 0 2.5rem;
+  height: 2.5rem;
 }
 
-.comment img {
-  height: 100%;
-  width: 100%;
+.notification .comment a {
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.notification .comment a img {
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .notification .comment a:hover {
-  /* border: 1px solid var(--light-grayish-blue-1); */
+  border-color: var(--light-grayish-blue-1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .notifications {
-    padding: 3rem 1.25rem;
-    margin-block: 0;
+    margin-block: 4rem;
+    padding: 2rem 2rem;
   }
 }
 
