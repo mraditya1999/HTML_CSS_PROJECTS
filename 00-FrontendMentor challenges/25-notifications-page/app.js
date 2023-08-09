@@ -6,17 +6,24 @@ btn.addEventListener('click', function () {
   notifications.forEach(function (notification) {
     if (notification.classList.contains('unread')) {
       notification.classList.remove('unread');
-      number.style.display = 'none';
+      number.innerHTML = 0;
     }
   });
 });
 
-let count = 0;
-notifications.forEach(function (notification) {
-  if (notification.classList.contains('unread')) count++;
-});
+window.addEventListener('DOMContentLoaded', function () {
+  let count = 0;
+  notifications.forEach(function (notification) {
+    if (notification.classList.contains('unread')) {
+      let notificationInfo = notification.querySelector('.notification-info p');
+      const span = document.createElement('span');
+      span.classList = 'dot';
+      notificationInfo.appendChild(span);
+      count++;
+    }
+  });
 
-if (count > 0) {
-  number.style.display = 'flex';
-  number.innerHTML = count;
-} else number.style.display = 'none';
+  if (count > 0) {
+    number.innerHTML = count;
+  }
+});
