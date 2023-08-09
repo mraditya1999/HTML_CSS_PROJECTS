@@ -13,23 +13,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-section {
-  min-height: 100vh;
+body {
   background: var(--light-grayish-blue);
+}
+
+section {
+  min-height: calc(100vh - 2rem);
   position: relative;
+  display: grid;
+  place-items: center;
+  padding-block: 2rem;
 }
 
 .card-container {
   width: 90vw;
-  max-width: 300px;
+  max-width: 1120px;
   margin: 0 auto;
-  padding: 4rem 0;
 }
 
 .card {
@@ -105,10 +107,57 @@ section {
   border-color: hsl(264, 29%, 73%);
 }
 
+.attribution {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution p {
+  text-align: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 576px) {
+  .card-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+      'one two  '
+      'three four '
+      'five five ';
+  }
+
+  .card {
+    margin-bottom: 0;
+    padding: 2rem;
+  }
+
+  .card-1 {
+    grid-area: one;
+  }
+  .card-2 {
+    grid-area: two;
+  }
+  .card-3 {
+    grid-area: four;
+  }
+  .card-4 {
+    grid-area: five;
+  }
+  .card-5 {
+    grid-area: three;
+  }
+}
+
 @media (min-width: 992px) {
   .card-container {
-    max-width: 1120px;
-    display: grid;
     gap: 1.5rem 1rem;
     grid-template-areas:
       'one  one   two three '
@@ -130,21 +179,4 @@ section {
   .card-5 {
     grid-area: three;
   }
-
-  .card {
-    margin-bottom: 0;
-    padding: 2rem;
-  }
-}
-
-.attribution {
-  font-size: 0.9rem;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }

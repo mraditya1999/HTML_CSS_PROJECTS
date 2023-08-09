@@ -27,7 +27,7 @@ body {
 }
 
 main {
-  min-height: 100vh;
+  min-height: calc(100vh - 2rem);
   background: var(--light-gray);
   color: var(--grayish-blue);
   position: relative;
@@ -38,20 +38,26 @@ main {
 
 section {
   width: 90vw;
-  max-width: 1000px;
+  max-width: 1170px;
   text-align: center;
 }
 
 .heading-primary {
   font-weight: 200;
+  font-size: clamp(1.325rem, 4vw, 3rem);
+}
+
+.heading-secondary {
+  font-size: clamp(1.325rem, 4vw, 3rem);
 }
 
 .card-text {
   max-width: 450px;
-  margin: 1rem auto 2rem auto;
   color: var(--grayish-blue);
-  font-size: 0.85rem;
+  font-size: clamp(0.9rem, 2vw, 1.25rem);
   font-weight: 200;
+  margin-inline: auto;
+  margin-block: 2rem 3rem;
 }
 
 .card {
@@ -67,11 +73,12 @@ section {
 
 .card .card-title {
   margin-bottom: 0.75rem;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
 }
 
 .card .card-content {
   color: var(--grayish-blue);
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 2vw, 1.15rem);
   margin: 0 auto;
   margin-bottom: 2rem;
 }
@@ -100,15 +107,20 @@ section {
 }
 
 .attribution {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution p {
   text-align: center;
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   color: black;
 }
 
 .attribution a {
+  text-decoration: none;
   color: var(--blue);
 }
 

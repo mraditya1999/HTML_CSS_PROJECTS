@@ -16,17 +16,17 @@
 body {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 18px;
-}
-
-section {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
+  background-color: var(--dark-cyan);
   background-image: url(images/bg-pattern-top.svg),
     url(images/bg-pattern-bottom.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: right 52vw bottom 35vh, left 50vw top 52vh;
-  background-color: var(--dark-cyan);
+}
+
+section {
+  min-height: calc(100vh - 2rem);
+  display: grid;
+  place-items: center;
 }
 
 .card {
@@ -105,11 +105,18 @@ section {
 }
 
 .attribution {
-  position: fixed;
-  bottom: 0;
-  background: transparent;
-  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution p {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.attribution a {
+  text-decoration: none;
   color: var(--dark-desaturated-blue);
 }

@@ -21,6 +21,7 @@ body {
   font-family: var(--ff-primary);
   background: var(--main-background);
 }
+
 span {
   color: var(--accent);
 }
@@ -42,7 +43,7 @@ small {
 }
 
 main {
-  min-height: 100vh;
+  min-height: calc(100vh - 2rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +52,7 @@ main {
 
 section {
   width: 90vw;
-  max-width: 768px;
+  max-width: 900px;
   background: var(--card-background);
   border-radius: 0.325rem;
   overflow: hidden;
@@ -79,26 +80,29 @@ section {
 }
 
 .card-info {
-  padding: 3rem 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
 .card-title {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  font-size: clamp(1.75rem, 3vw, 2rem);
 }
 
 .card-text {
   color: var(--main-paragraph);
-  font-size: 0.8rem;
+  font-size: clamp(1rem, 2vw, 1.075rem);
   line-height: 1.5;
   font-weight: 400;
-  margin-bottom: 1.5rem;
+  margin-block: 2rem 3rem;
 }
 
 .stats {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   text-transform: uppercase;
+}
+
+.stats h3 {
+  font-size: clamp(1.625rem, 4vw, 1.75rem);
 }
 
 .stats small {
@@ -106,6 +110,24 @@ section {
   font-size: 0.6rem;
   font-family: var(--ff-primary);
   font-weight: 400;
+}
+
+.attribution {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution p {
+  text-align: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: var(--accent);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--white);
 }
 
 @media screen and (min-width: 468px) {
@@ -116,51 +138,32 @@ section {
     margin-top: 3rem;
   }
 
+  .card-info {
+    padding: 4rem 3rem;
+  }
+
   .stats {
     margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   section {
     display: flex;
     flex-direction: row-reverse;
   }
 
-  .container {
-    margin-top: 3rem;
-    justify-content: space-around;
-  }
-
   .card-info {
-    padding: 2rem;
+    padding: 4rem 2rem;
     flex: 0 0 50%;
   }
 
   .image-container {
     flex: 0 0 50%;
   }
+
   .card-text {
     max-width: 20rem;
     margin-bottom: 0;
   }
-
-  .card-title {
-    font-size: 1.75rem;
-  }
-}
-
-.attribution {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--accent);
-  font-size: 0.8rem;
-}
-
-.attribution a {
-  color: var(--white);
 }

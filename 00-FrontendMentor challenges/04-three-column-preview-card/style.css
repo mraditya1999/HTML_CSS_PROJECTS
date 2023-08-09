@@ -28,6 +28,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--ff-primary);
 }
 
 body {
@@ -37,7 +38,7 @@ body {
 }
 
 main {
-  min-height: 100vh;
+  min-height: calc(100vh - 2rem);
   display: grid;
   place-items: center;
   position: relative;
@@ -100,16 +101,19 @@ article .title {
 }
 
 .attribution {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.8rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution p {
   text-align: center;
-  width: 100%;
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 .attribution a {
+  text-decoration: none;
   color: hsl(228, 45%, 44%);
 }
 
@@ -119,17 +123,17 @@ article .title {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template:
-      'a b'
-      'c c';
+      'sedan suv'
+      'luxury luxury';
   }
 
   .luxury-section {
-    grid-area: c;
+    grid-area: luxury;
   }
 }
 @media screen and (min-width: 992px) {
   section {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template: 'a b c';
+    grid-template: 'sedan suv luxury';
   }
 }

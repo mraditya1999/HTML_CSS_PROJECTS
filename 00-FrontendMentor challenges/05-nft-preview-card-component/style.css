@@ -21,18 +21,18 @@ body {
   font-family: var(--ff-primary);
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
+  background: var(--dark-blue-main-bg);
 }
 
 main {
-  height: 100vh;
-  background: var(--dark-blue-main-bg);
+  min-height: calc(100vh - 2rem);
   display: grid;
   place-items: center;
   position: relative;
 }
 
 .card {
-  width: 95vw;
+  width: 90vw;
   max-width: 300px;
   padding: 1rem 1.25rem;
   border-radius: 12px;
@@ -58,6 +58,7 @@ main {
   inset: 0;
   opacity: 0;
   background: var(--cyan);
+  background: hsla(178, 100%, 50%, 0.411);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   display: grid;
@@ -66,7 +67,7 @@ main {
 }
 
 .card-img-container:hover .overlay {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .card-info {
@@ -128,14 +129,21 @@ a:hover {
 }
 
 .attribution {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution p {
   text-align: center;
-  font-size: 0.8rem;
-  color: var(--soft-blue);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: var(--white);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
 }
 
 @media screen and (min-width: 768px) {
