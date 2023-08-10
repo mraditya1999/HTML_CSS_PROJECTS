@@ -161,7 +161,7 @@ main {
 
 .calculator {
   width: 90vw;
-  max-width: 220px;
+  max-width: 250px;
 }
 
 .calculator .header {
@@ -281,11 +281,32 @@ main {
   color: var(--text-white);
   box-shadow: 0px 2px 0px 0px var(--key-shadow);
   font-size: 1rem;
-  font-size: 0.75rem;
+  padding: 0.75rem 0;
+  /* font-size: 0.75rem; */
 }
 
 .btn.result {
   background: var(--key-background-3);
   box-shadow: 0px 2px 0px 0px var(--key-shadow-3);
   color: var(--text-white);
+}
+
+.attribution {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution p {
+  text-align: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  color: var(--key-background-2);
+}
+
+.attribution a {
+  text-decoration: none;
+  /* color: var(--key-shadow-3); */
 }
