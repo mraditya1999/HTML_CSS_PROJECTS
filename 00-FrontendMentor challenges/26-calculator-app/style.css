@@ -161,7 +161,7 @@ main {
 
 .calculator {
   width: 90vw;
-  max-width: 250px;
+  max-width: 350px;
 }
 
 .calculator .header {
@@ -173,7 +173,8 @@ main {
 }
 
 .header h1 {
-  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-size: clamp(1.5rem, 3vw, 1.75rem);
+  text-transform: capitalize;
 }
 
 .theme-toggle {
@@ -184,7 +185,7 @@ main {
 
 .theme-toggle small {
   text-transform: uppercase;
-  font-size: 0.5rem;
+  font-size: 0.9rem;
   display: inline-block;
   margin-right: 1rem;
   letter-spacing: 1px;
@@ -200,7 +201,7 @@ main {
 }
 
 .theme-toggle .theme-wrapper {
-  font-size: 0.4rem;
+  font-size: 0.75rem;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -213,8 +214,8 @@ main {
 }
 
 .theme-toggle .outer {
-  height: 1rem;
-  width: 3rem;
+  height: 1.75rem;
+  width: 4rem;
   background: var(--keypad-background);
   border-radius: 0.75rem;
   display: flex;
@@ -223,8 +224,8 @@ main {
 }
 
 .theme-toggle .inner {
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 1.325rem;
+  height: 1.325rem;
   border-radius: 50%;
   background: var(--key-background-3);
   cursor: pointer;
@@ -232,14 +233,14 @@ main {
 }
 
 .form-input {
-  padding: 0.75rem;
   text-align: right;
   color: var(--text-white);
   background: var(--screen-background);
   border: transparent;
   outline: transparent;
   border-radius: 0.325rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding: 1.5rem;
   width: 100%;
 }
 
@@ -263,12 +264,12 @@ main {
   border: transparent;
   outline: transparent;
   cursor: pointer;
-  flex: 1 0 1.5rem;
-  padding: 0.5rem 0;
+  flex: 1 0 1.75rem;
+  padding: 0.75rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(1rem, 3vw, 1.75rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   border-radius: 0.15rem;
   box-shadow: 0px 2px 0px 0px var(--key-shadow-2);
   color: var(--text-primary);
@@ -280,9 +281,6 @@ main {
   background: var(--key-background);
   color: var(--text-white);
   box-shadow: 0px 2px 0px 0px var(--key-shadow);
-  font-size: 1rem;
-  padding: 0.75rem 0;
-  /* font-size: 0.75rem; */
 }
 
 .btn.result {
@@ -303,10 +301,11 @@ main {
   font-size: clamp(0.8rem, 2vw, 1rem);
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
-  color: var(--key-background-2);
+  color: beige;
+  color: rgb(212, 212, 34);
 }
 
 .attribution a {
   text-decoration: none;
-  /* color: var(--key-shadow-3); */
+  color: rgb(212, 212, 34);
 }
