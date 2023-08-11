@@ -298,6 +298,12 @@ Header
   border-radius: 50%;
 }
 
+/* 
+==============
+ access
+==============
+ */
+
 .access {
   background: var(--desaturated-blue);
   padding: 5rem 0;
@@ -315,6 +321,16 @@ Header
 
 .access .form-control {
   gap: 0.5rem;
+}
+
+/* 
+==============
+ footer
+==============
+ */
+
+.section.footer {
+  padding-bottom: 0;
 }
 
 .footer {
@@ -382,6 +398,7 @@ Header
   justify-content: center;
   align-items: start;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer-icons .link {
@@ -403,18 +420,23 @@ Header
 }
 
 .attribution {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  max-width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution p {
   text-align: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   color: var(--light-gray);
 }
 
 .attribution a {
+  text-decoration: none;
   color: #fff;
 }
+
 .attribution a:hover {
   color: var(--accent-blue);
 }

@@ -107,7 +107,7 @@ nav {
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .nav-header {
@@ -355,7 +355,7 @@ main {
   }
 }
 
-.attribution {
+/* .attribution {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -364,4 +364,21 @@ main {
   font-size: 0.9rem;
   color: var(--orange);
   color: var(--grayish-blue);
+} */
+
+.attribution {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution p {
+  text-align: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
 }
