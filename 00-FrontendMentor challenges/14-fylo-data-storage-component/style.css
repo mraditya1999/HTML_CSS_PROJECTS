@@ -19,14 +19,16 @@ ul {
   list-style: none;
 }
 
-main {
-  min-height: 100vh;
+body {
   background: hsl(229, 57%, 11%) url('./images/bg-mobile.png');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+main {
+  min-height: calc(100vh - 2rem);
   display: grid;
   place-items: center;
-  font-family: 'Raleway', sans-serif;
   position: relative;
 }
 
@@ -152,6 +154,24 @@ main {
   margin-right: 0.5rem;
 }
 
+.attribution {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution p {
+  text-align: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: var(--grayish-blue);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--pale-blue);
+}
+
 @media screen and (min-width: 572px) {
   .data-storage {
     flex-direction: row;
@@ -190,26 +210,10 @@ main {
     border-color: white white transparent transparent;
   }
 
-  main {
+  body {
     background: hsl(229, 57%, 11%) url('./images/bg-desktop.png');
     background-size: cover;
     background-position: top 50vh left 0;
     background-repeat: no-repeat;
-    display: grid;
-    place-items: center;
   }
-}
-
-.attribution {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  color: var(--grayish-blue);
-  font-size: 0.9rem;
-}
-
-.attribution a {
-  color: var(--pale-blue);
 }

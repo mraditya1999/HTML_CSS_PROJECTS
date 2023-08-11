@@ -8,7 +8,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/qr-code-component-9LIGpXjOwy)
+- [Solution URL](https://www.frontendmentor.io/solutions/calculator-app-Ko2LulgLbM)
 - [Live Site URL](https://26-calculator-app.netlify.app)
 
 ### Built with

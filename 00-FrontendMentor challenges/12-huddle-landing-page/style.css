@@ -352,13 +352,10 @@ h4 {
 }
 
 .attribution {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  font-size: 0.9rem;
-  text-align: center;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .attribution p {

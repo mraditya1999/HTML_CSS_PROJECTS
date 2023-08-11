@@ -40,6 +40,12 @@ ul li {
   list-style-type: none;
 }
 
+.site-wrapper {
+  min-height: calc(100vh - 2rem);
+  display: grid;
+  place-items: center;
+}
+
 .main-container,
 .thank-you {
   background-color: hsl(213, 19%, 18%);
@@ -148,12 +154,19 @@ ul li {
 }
 
 .attribution {
-  font-size: 14px;
-  text-align: center;
-  color: var(--white);
-  position: absolute;
-  bottom: 0;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.attribution p {
+  text-align: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: var(--white);
+}
+
 .attribution a {
+  text-decoration: none;
   color: hsl(228, 45%, 44%);
 }

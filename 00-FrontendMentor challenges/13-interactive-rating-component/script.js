@@ -17,7 +17,6 @@ rateAgain.addEventListener('click', function () {
 
 rates.forEach((rate) => {
   rate.addEventListener('click', function () {
-    console.log(rate.innerHTML);
     rating.innerHTML = rate.innerHTML;
   });
 });

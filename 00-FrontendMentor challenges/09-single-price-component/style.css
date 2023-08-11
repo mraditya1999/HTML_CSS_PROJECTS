@@ -19,25 +19,26 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  min-height: calc(100vh - 2rem);
   display: grid;
   place-items: center;
   position: relative;
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
+  padding: 3rem 0;
 }
 
 .box-container {
-  width: 85vw;
-  max-width: 350px;
+  width: 90vw;
+  max-width: 700px;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 .box {
-  padding: 2rem clamp(1.5rem, 3vw, 2rem);
+  padding: clamp(2rem, 3vw, 3.5rem) clamp(1.5rem, 3vw, 2.5rem);
   color: var(--light-gray);
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 3vw, 1rem);
 }
 
 .box-1 {
@@ -68,6 +69,7 @@ section {
 
 .box-2 .subscription {
   font-size: 2.25rem;
+  font-size: clamp(2.25rem, 3vw, 2.75rem);
   font-weight: 700;
   margin-bottom: 0.5rem;
   position: relative;
@@ -94,9 +96,16 @@ section {
   outline: none;
   padding: 0.8rem 0;
   background: var(--bright-yellow);
-  font-size: 1rem;
+  font-size: clamp(1rem, 3vw, 1.25rem);
   color: var(--light-gray);
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.box-2 .btn:hover {
+  color: var(--grayish-blue);
+  background: var(--light-gray);
 }
 
 .box-3 h3 {
@@ -105,7 +114,7 @@ section {
 
 .box-3 p {
   line-height: 1.5;
-  font-size: 14px;
+  font-size: clamp(0.9rem, 3vw, 1rem);
   color: hsla(203, 44%, 93%, 0.751);
 }
 
@@ -128,13 +137,8 @@ section {
 
 @media screen and (min-width: 768px) {
   .box-container {
-    max-width: 640px;
     display: grid;
     grid-template-areas: 'a a' 'b c';
-  }
-
-  .box {
-    padding: 3.5rem 2.5rem;
   }
 
   .box-1 {
