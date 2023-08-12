@@ -27,9 +27,12 @@ a {
   text-decoration: none;
 }
 
-section {
-  min-height: 100vh;
+body {
   background: var(--light-grayish-blue-0);
+}
+
+section {
+  min-height: calc(100vh -2rem);
   display: flex;
   justify-content: center;
 }
@@ -196,22 +199,31 @@ section {
   border-color: var(--light-grayish-blue-1);
 }
 
+.attribution {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution p {
+  text-align: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: hsl(228, 45%, 44%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+.attribution a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--red);
+}
+
 @media screen and (min-width: 768px) {
   .notifications {
     margin-block: 4rem;
     padding: 2rem 2rem;
   }
-}
-
-.attribution {
-  font-size: 0.8rem;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-.attribution a:hover {
-  color: var(--red);
 }

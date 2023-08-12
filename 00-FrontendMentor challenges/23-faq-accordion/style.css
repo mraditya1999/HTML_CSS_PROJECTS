@@ -25,7 +25,7 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  min-height: calc(100vh - 2rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,19 +120,25 @@ img {
 }
 
 .attribution {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution p {
   text-align: center;
-  width: 100%;
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   color: var(--light-grayish-blue);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
 }
 
 .attribution a {
-  color: var(--darkest-grayish-blue);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
   text-decoration: none;
-  font-weight: 700;
+  color: var(--darkest-grayish-blue);
 }
 
 @media screen and (min-width: 768px) {

@@ -3,9 +3,12 @@ function ValidateEmail(input) {
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
   if (input.value.match(validRegex)) {
-    popup.classList.add('show-popup');
+    form.classList.add('success');
+    errorText.innerHTML =
+      'Welcome to our newsletter community! Enjoy exclusive updates and offers.';
     setTimeout(function () {
-      popup.classList.remove('show-popup');
+      form.classList.remove('success');
+      errorText.textContent = '';
     }, 2000);
     return true;
   } else {
