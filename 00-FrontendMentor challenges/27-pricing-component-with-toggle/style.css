@@ -27,6 +27,7 @@ main {
   display: grid;
   place-items: center;
   padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 ul {

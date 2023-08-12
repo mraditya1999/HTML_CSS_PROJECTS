@@ -96,7 +96,7 @@ section {
   outline: none;
   padding: 0.8rem 0;
   background: var(--bright-yellow);
-  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-size: 1rem;
   color: var(--light-gray);
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
