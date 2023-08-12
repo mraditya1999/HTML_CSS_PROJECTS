@@ -103,3 +103,7 @@
 <a href="https://fm-26-calculator-app.netlify.app">
   <img src="./26-calculator-app/design/desktop-design.jpg" alt="Calculator App" width="320" height="220">
 </a>
+
+<a href="https://fm-27-pricing-component-with-toggle.netlify.app">
+  <img src="./27-pricing-component-with-toggle/design/desktop-design.jpg" alt="Calculator App" width="320" height="220">
+</a>
