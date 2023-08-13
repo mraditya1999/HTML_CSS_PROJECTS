@@ -105,5 +105,9 @@
 </a>
 
 <a href="https://fm-27-pricing-component-with-toggle.netlify.app">
-  <img src="./27-pricing-component-with-toggle/design/desktop-design.jpg" alt="Calculator App" width="320" height="220">
+  <img src="./27-pricing-component-with-toggle/design/desktop-design.jpg" alt="Pricing Component With Toggle" width="320" height="220">
+</a>
+
+<a href="https://fm-28-huddle-landing-page-alternate-blocks.netlify.app">
+  <img src="./28-huddle-landing-page-alternate-blocks/design/desktop-design.jpg" alt="Huddle landing page with alternating feature blocks" width="320" height="220">
 </a>
