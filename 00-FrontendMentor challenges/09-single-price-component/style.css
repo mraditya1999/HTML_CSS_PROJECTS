@@ -32,11 +32,11 @@ section {
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-  margin: 3rem 0;
+  /* margin: 3rem 0; */
 }
 
 .box {
-  padding: clamp(2rem, 3vw, 3.5rem) clamp(1.5rem, 3vw, 2.5rem);
+  padding: 2.5rem 2rem;
   color: var(--light-gray);
   font-size: clamp(0.9rem, 3vw, 1rem);
 }
