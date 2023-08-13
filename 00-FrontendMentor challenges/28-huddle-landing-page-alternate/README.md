@@ -4,12 +4,12 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ### Screenshot
 
-[![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./design/desktop-preview.jpg)](https://fm-28-huddle-landing-page-alternate-blocks.netlify.app)
+[![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./design/desktop-preview.jpg)](https://fm-28-huddle-landing-page-alternate.netlify.app)
 
 ### Links
 
 - [Solution URL](https://www.frontendmentor.io/solutions/huddle-landing-page-q4Wn4BGj07)
-- [Live Site URL](https://fm-28-huddle-landing-page-alternate-blocks.netlify.app)
+- [Live Site URL](https://fm-28-huddle-landing-page-alternate.netlify.app)
 
 ### Built with
 
