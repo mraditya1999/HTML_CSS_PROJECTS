@@ -32,8 +32,8 @@
   <img src="./08-four-card-section/design/desktop-preview.jpg" alt="four-card-section" width="320" height="220" ">
 </a>
 
-<a href="https://fm-09-single-price-component.netlify.app">
-  <img src="./09-single-price-component/design/desktop-preview.jpg" alt="single-price-component" width="320" height="220" ">
+<a href="https://fm-09-price-component.netlify.app">
+  <img src="./09-price-component/design/desktop-preview.jpg" alt="single-price-component" width="320" height="220" ">
 </a>
 
 <a href="https://fm-10-testimonials-grid-section.netlify.app">
