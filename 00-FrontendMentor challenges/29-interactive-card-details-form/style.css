@@ -109,17 +109,18 @@ section {
 }
 
 .card-info {
-  height: 60vh;
-  padding-top: 12rem;
+  min-height: 60vh;
   padding-inline: 1.5rem;
   background: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
 }
 
 .form {
-  max-width: 300px;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 320px;
   display: none;
 }
 
@@ -137,7 +138,7 @@ section {
   display: block;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 0.75rem;
+  font-size: clamp(0.625rem, 2vw, 0.75rem);
   font-weight: 700;
 }
 
@@ -215,15 +216,34 @@ section {
   visibility: visible;
 }
 
+.attribution {
+  align-self: flex-end;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution p {
+  text-align: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: var(--clr-pale-blue);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
 @media screen and (min-width: 992px) {
   section {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
   }
 
   .card-image {
-    height: 100vh;
+    min-height: 100vh;
     flex-basis: 35%;
     background: url('./images/bg-main-desktop.png');
     background-position: center;
@@ -231,29 +251,21 @@ section {
   }
 
   .card-image .card-front {
-    position: absolute;
-    right: 0%;
-    transform: translateX(40%);
-    top: 20%;
     top: 0;
+    right: 0;
     transform: translate(40%, 150%);
   }
 
   .card-image .card-back {
-    position: absolute;
-    right: 0;
-    transform: translateX(65%);
-    top: 51%;
     top: 0;
+    right: 0;
     transform: translate(65%, 40%);
   }
 
   .card-info {
-    display: flex;
+    min-height: 100vh;
     flex-basis: 65%;
-    align-items: center;
-    justify-content: center;
-    padding-top: 0;
-    padding-left: 5rem;
+    margin-top: 0;
+    margin-left: 5rem;
   }
 }

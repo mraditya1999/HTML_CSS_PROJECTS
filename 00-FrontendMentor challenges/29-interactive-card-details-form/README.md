@@ -8,7 +8,7 @@ This is a solution to the [Interactive card details form challenge on Frontend M
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/huddle-landing-page-q4Wn4BGj07)
+- [Solution URL](https://www.frontendmentor.io/solutions/interactive-card-details-form-izltW3Oga0)
 - [Live Site URL](https://fm-29-interactive-card-details-form.netlify.app)
 
 ### Built with
