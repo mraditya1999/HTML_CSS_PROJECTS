@@ -48,6 +48,8 @@ Take a tour of my live projects to experience the magic firsthand:
 8. [Portfolio](https://css-08-portfolio.netlify.app)
 9. [Form](https://css-09-form.netlify.app)
 10. [Restaurant Website](https://css-10-restaurant-website.netlify.app)
+11. [Space Website](https://css-11-space-website.netlify.app)
+12. [404 Page](https://css-12-404-page.netlify.app)
 
 ## Contributing 🥳🎉
 
