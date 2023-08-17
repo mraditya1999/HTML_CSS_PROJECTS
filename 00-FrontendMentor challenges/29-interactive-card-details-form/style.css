@@ -238,8 +238,6 @@ section {
 @media screen and (min-width: 992px) {
   section {
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
   }
 
   .card-image {
@@ -253,13 +251,13 @@ section {
   .card-image .card-front {
     top: 0;
     right: 0;
-    transform: translate(40%, 150%);
+    transform: translate(35%, 50%);
   }
 
   .card-image .card-back {
     top: 0;
     right: 0;
-    transform: translate(65%, 40%);
+    transform: translate(60%, 170%);
   }
 
   .card-info {
