@@ -1,3 +1,3 @@
-<a href="https://css-03-backroads-tours.netlify.app">
-  <img src="./design/03-backroads-tours(flexbox).jpeg" alt="backroads-tours">
-</a>
+# BACKROADS TOURS
+
+[![Backroads Tours](<./design/03-backroads-tours(flexbox).jpeg>)]("https://css-03-backroads-tours.netlify.app)

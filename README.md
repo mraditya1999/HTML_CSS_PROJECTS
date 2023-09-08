@@ -39,7 +39,7 @@ Feel free to explore and engage with projects that align with your aspirations o
 Take a tour of my live projects to experience the magic firsthand:
 
 1. [Tea Station](https://css-01-tea-station.netlify.app)
-2. [Flexbox Mini Project](https://css-02-flexbox-mini-project.netlify.app)
+2. [Flex-box Mini Project](https://css-02-flexbox-mini-project.netlify.app)
 3. [Backroads Tours](https://css-03-backroads-tours.netlify.app)
 4. [Gride Mini Project](https://css-04-grid-mini-project.netlify.app)
 5. [Portfolio(grid)](https://css-05-portfolio.netlify.app)
